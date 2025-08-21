@@ -4,5 +4,5 @@ fasta_path = os.path.join(project_root, "data", "sequence.fasta") #Creates a pat
 genes = Fasta(fasta_path)
 
 mitochondria = list(genes.keys())[0] #Fasta object is dictionary-like, so we can create the first key to access
-print(genes[mitochondria][100:150:50]) #First goes to mitochondria, then slices sequence from 100 to 150 with a step of 50
-      
+print(genes[mitochondria][100:150:1]) #First goes to mitochondria, then slices sequence from 100 to 150 with a step of 50
+     
